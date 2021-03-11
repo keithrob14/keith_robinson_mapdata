@@ -1,6 +1,5 @@
 const key = 'pk.eyJ1IjoicG9zdHBsYXN0aWMiLCJhIjoiY2tpamJyNm1zMDE0OTJ0czU5cDkyNjE3ciJ9.VRXSaQR1sQoWudM3Bgp9Lg';
 let img;
-let img2;
 
 const mappa = new Mappa('MapboxGL', key)
 let myMap;
@@ -23,7 +22,6 @@ function setup() {
   img = createImg('images/meadowhollow.jpg');
   img2 = createImg('images/canon.jpg');
   img.hide();
-  img2.hide();
 }
 
 
@@ -71,7 +69,7 @@ function draw() {
   
     if(dist(canon.x,canon.y,mouseX,mouseY)<=25){
      fill(0,100);
-     image(img2,canon.x,canon.y,200,200);
+     image('images/canon.jpg',canon.x,canon.y,200,200);
     }else{
       fill(255,100);
     }
