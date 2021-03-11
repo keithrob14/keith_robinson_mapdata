@@ -10,7 +10,7 @@ const options= {
   lng: -82.681140,
   zoom: 5,
   style:'mapbox://styles/postplastic/ckm0tepet0s0517qxhwt23r9y', 
-  pitch:30,
+  pitch:40,
 };
 
 
