@@ -1,5 +1,6 @@
 const key = 'pk.eyJ1IjoicG9zdHBsYXN0aWMiLCJhIjoiY2tpamJyNm1zMDE0OTJ0czU5cDkyNjE3ciJ9.VRXSaQR1sQoWudM3Bgp9Lg';
-
+let img;
+let img2;
 
 const mappa = new Mappa('MapboxGL', key)
 let myMap;
@@ -20,7 +21,9 @@ function setup() {
   myMap.overlay(canvas);
   //greenhouse = loadTable('Greenhouse_Data.csv','csv','header')
   img = createImg('images/meadowhollow.jpg');
+  img2 = createImg('images/canon.jpg');
   img.hide();
+  img2.hide();
 }
 
 
@@ -42,7 +45,7 @@ function draw() {
   
   if(dist(meadowhollow.x,meadowhollow.y,mouseX,mouseY)<=25){
    fill(0,100);
-   image(img,meadowhollow.x,meadowhollow.y,800,200);
+   image(img,meadowhollow.x,meadowhollow.y,200,200);
   }else{
     fill(255,100);
   }
@@ -68,6 +71,7 @@ function draw() {
   
     if(dist(canon.x,canon.y,mouseX,mouseY)<=25){
      fill(0,100);
+     image(img2,canon.x,canon.y,200,200);
     }else{
       fill(255,100);
     }
