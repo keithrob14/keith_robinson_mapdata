@@ -42,7 +42,7 @@ function draw() {
   
   if(dist(meadowhollow.x,meadowhollow.y,mouseX,mouseY)<=25){
    fill(0,100);
-   image(img,meadowhollow.x,meadowhollow.y,300,200);
+   image(img,meadowhollow.x,meadowhollow.y,800,200);
   }else{
     fill(255,100);
   }
